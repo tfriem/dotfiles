@@ -9,4 +9,5 @@
     ~/.oh-my-zsh: oh-my-zsh
     ~/.oh-my-zsh/custom/themes/powerlevel9k: powerlevel9k
     ~/.zshrc: zshrc
+    ~/.tmux.conf: oh-my-tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
