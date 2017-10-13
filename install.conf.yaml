@@ -3,6 +3,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.oh-my-zsh/custom/themes
+  - fzf/install --all
 
 - link:
     ~/.gitconfig: gitconfig
