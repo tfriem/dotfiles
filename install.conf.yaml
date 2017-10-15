@@ -2,13 +2,17 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - mkdir -p ~/.oh-my-zsh/custom/themes
-  - fzf/install --all
 
 - link:
     ~/.gitconfig: gitconfig
     ~/.oh-my-zsh: oh-my-zsh
-    ~/.oh-my-zsh/custom/themes/powerlevel9k: powerlevel9k
     ~/.zshrc: zshrc
     ~/.tmux.conf: oh-my-tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
+
+- shell:
+  - mkdir -p ~/.oh-my-zsh/custom/themes
+  - fzf/install --all
+
+- link:
+    ~/.oh-my-zsh/custom/themes/powerlevel9k: powerlevel9k
