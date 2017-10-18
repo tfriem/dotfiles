@@ -1,4 +1,4 @@
-export ZSH=/home/tobias/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
