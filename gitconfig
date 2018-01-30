@@ -1,3 +1,9 @@
 [user]
 	email = tfriem@gmail.com
 	name = Tobias Friemel
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
