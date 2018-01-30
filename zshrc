@@ -1,3 +1,8 @@
+if [[ `uname` == 'Darwin' ]]
+then
+	PATH="/usr/local/bin:$(getconf PATH)"
+fi
+
 export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
@@ -8,7 +13,7 @@ COMPLETION_WAITING_DOTS="true"
 
 ZSH_TMUX_AUTOSTART="false"
 
-plugins=(git tmux colored-man-page cp dirpersist rsync tig zsh-syntax-highlighting history-substring-search)
+plugins=(git zsh-nvm tmux colored-man-page cp dirpersist rsync tig zsh-syntax-highlighting history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
