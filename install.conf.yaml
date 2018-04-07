@@ -16,3 +16,4 @@
 
 - link:
     ~/.oh-my-zsh/custom/themes/powerlevel9k: powerlevel9k
+    ~/.oh-my-zsh/custom/plugins/zsh-nvm: zsh-nvm
