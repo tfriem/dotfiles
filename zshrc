@@ -8,6 +8,8 @@ PATH=$PATH:"/home/$USER/.yarn/bin"
 export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
+export WORKON_HOME=~/.virtualenvs
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 HYPHEN_INSENSITIVE="true"
