@@ -16,7 +16,7 @@ COMPLETION_WAITING_DOTS="true"
 ZSH_TMUX_AUTOSTART="true"
 ZSH_TMUX_AUTOCONNECT="false"
 
-plugins=(git zsh-nvm tmux colored-man-page cp dirpersist rsync tig zsh-syntax-highlighting history-substring-search)
+plugins=(git virtualenvwrapper virtualenv zsh-nvm tmux colored-man-page cp dirpersist rsync tig zsh-syntax-highlighting history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
