@@ -3,6 +3,8 @@ then
 	PATH="/usr/local/bin:$(getconf PATH)"
 fi
 
+PATH=$PATH:"/home/tobias/.yarn/bin"
+
 export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
