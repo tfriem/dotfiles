@@ -1,6 +1,7 @@
 if [[ `uname` == 'Darwin' ]]
 then
 	PATH="/usr/local/bin:$(getconf PATH)"
+	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 fi
 
 PATH=$PATH:"/home/$USER/.yarn/bin"
