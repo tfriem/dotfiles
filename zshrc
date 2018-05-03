@@ -34,3 +34,7 @@ plugins=(vi-mode git virtualenvwrapper virtualenv zsh-nvm tmux colored-man-page 
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/tobias/.sdkman"
+[[ -s "/home/tobias/.sdkman/bin/sdkman-init.sh" ]] && source "/home/tobias/.sdkman/bin/sdkman-init.sh"
