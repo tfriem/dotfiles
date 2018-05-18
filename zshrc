@@ -13,6 +13,9 @@ export WORKON_HOME=~/.virtualenvs
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
+
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
