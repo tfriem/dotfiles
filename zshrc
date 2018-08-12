@@ -4,8 +4,6 @@ then
 	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 fi
 
-PATH=$PATH:~/.yarn/bin
-
 export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
