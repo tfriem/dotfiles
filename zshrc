@@ -8,6 +8,9 @@ if type "bat" > /dev/null; then
 	alias cat=bat
 fi
 
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+
 export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
