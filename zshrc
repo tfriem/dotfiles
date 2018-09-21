@@ -4,6 +4,10 @@ then
 	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 fi
 
+if type "bat" > /dev/null; then
+	alias cat=bat
+fi
+
 export ZSH=~/.oh-my-zsh
 export EDITOR=vim
 
