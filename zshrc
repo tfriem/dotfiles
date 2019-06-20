@@ -4,6 +4,8 @@ then
 	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 fi
 
+PATH=/snap/bin:$PATH
+
 if type "bat" > /dev/null; then
 	alias cat=bat
 fi
@@ -37,7 +39,7 @@ POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='black'
 POWERLEVEL9K_VIRTUALENV_FOREGROUND='black'
 POWERLEVEL9K_VIRTUALENV_BACKGROUND='3'
 
-plugins=(vi-mode git dotenv virtualenvwrapper virtualenv zsh-nvm tmux colored-man-pages cp copyfile copydir dircycle dirpersist rsync tig history-substring-search)
+plugins=(vi-mode git dotenv virtualenvwrapper virtualenv zsh-nvm tmux colored-man-pages cp copyfile copydir dircycle dirpersist rsync kubectl tig history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
