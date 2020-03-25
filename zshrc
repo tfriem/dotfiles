@@ -4,6 +4,8 @@ then
 	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 fi
 
+export TERM="xterm-256color"
+
 PATH=/snap/bin:$PATH
 
 if type "bat" > /dev/null; then
