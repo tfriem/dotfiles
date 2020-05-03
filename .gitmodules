@@ -16,3 +16,6 @@
 [submodule "zsh-nvm"]
 	path = zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm
+[submodule "bat-extras"]
+	path = bat-extras
+	url = https://github.com/eth-p/bat-extras.git

@@ -11,6 +11,10 @@
     ~/.tmux.conf: oh-my-tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.config/bat/config: bat.config
+    ~/scripts/:
+      create: true
+      glob: true
+      path: bat-extras/src/*
 
 - shell:
   - mkdir -p ~/.oh-my-zsh/custom/themes

@@ -4,6 +4,12 @@ then
 	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 fi
 
+# bat-extras
+
+export PATH="$HOME/scripts:$PATH"
+
+###
+
 export TERM="xterm-256color"
 
 PATH=/snap/bin:$PATH
