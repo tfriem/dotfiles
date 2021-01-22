@@ -1,30 +1,16 @@
-if [[ `uname` == 'Darwin' ]]
-then
-	PATH="/usr/local/bin:$(getconf PATH)"
-	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-fi
-
-# bat-extras
-
-export PATH="$HOME/scripts:$PATH"
-
-###
-
+# General settings
 export TERM="xterm-256color"
+export EDITOR=vim
 
-PATH=/snap/bin:$PATH
 
+# bat and bat-extras
 if type "bat" > /dev/null; then
 	alias cat=bat
 fi
+export PATH="$HOME/scripts:$PATH"
 
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
-
+# oh-my-zsh
 export ZSH=~/.oh-my-zsh
-export EDITOR=vim
-
-export WORKON_HOME=~/.virtualenvs
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -47,11 +33,17 @@ POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='black'
 POWERLEVEL9K_VIRTUALENV_FOREGROUND='black'
 POWERLEVEL9K_VIRTUALENV_BACKGROUND='3'
 
-plugins=(vi-mode git virtualenvwrapper virtualenv zsh-nvm tmux colored-man-pages cp copyfile copydir dircycle dirpersist rsync kubectl tig history-substring-search)
+plugins=(vi-mode git virtualenv zsh-nvm tmux colored-man-pages cp copyfile copydir dircycle dirpersist rsync kubectl tig history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+
+# Generated
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
