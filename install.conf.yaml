@@ -1,0 +1,39 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - mkdir -p ~/.config/bat
+    - mkdir -p ~/.SpaceVim.d
+    - mkdir -p ~/.config/i3
+    - mkdir -p ~/.config/rofi
+
+- link:
+    ~/.oh-my-zsh: oh-my-zsh
+    ~/.zshrc: zshrc
+    ~/.tmux.conf: oh-my-tmux/.tmux.conf
+    ~/.tmux.conf.local: tmux.conf.local
+    ~/.config/bat/config: bat.config
+    ~/.vim: SpaceVim
+    ~/.SpaceVim: SpaceVim
+    ~/.SpaceVim.d/init.toml: spacevim.toml
+    ~/.config/i3/config: i3config
+    ~/.config/rofi/config.rasi: rofi/config.rasi
+    ~/.config/rofi/nord.rasi: rofi/nord.rasi
+    ~/scripts/:
+      create: true
+      glob: true
+      path: bat-extras/src/*
+
+- shell:
+    - mkdir -p ~/.oh-my-zsh/custom/themes
+    - fzf/install --all
+    - curl -s "https://get.sdkman.io" | bash
+    - sudo dpkg -i debs/*.deb
+
+- link:
+    ~/.oh-my-zsh/custom/themes/powerlevel9k: powerlevel9k
+    ~/.oh-my-zsh/custom/plugins/zsh-nvm: zsh-nvm

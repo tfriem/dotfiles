@@ -1,0 +1,25 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "powerlevel9k"]
+	path = powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "zsh-nvm"]
+	path = zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm
+[submodule "bat-extras"]
+	path = bat-extras
+	url = https://github.com/eth-p/bat-extras.git
+[submodule "SpaceVim"]
+	path = SpaceVim
+	url = https://github.com/SpaceVim/SpaceVim.git
+[submodule "oh-my-tmux"]
+	path = oh-my-tmux
+	url = https://github.com/gpakosz/.tmux.git

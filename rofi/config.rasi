@@ -1,0 +1,6 @@
+configuration {
+  font: "Hack 14";
+  width: 33;
+  location: 2;
+}
+@theme "nord"
