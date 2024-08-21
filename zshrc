@@ -14,7 +14,7 @@ export PATH="$HOME/scripts:$PATH"
 # oh-my-zsh
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 DISABLE_UPDATE_PROMPT=true
 DISABLE_AUTO_UPDATE=true

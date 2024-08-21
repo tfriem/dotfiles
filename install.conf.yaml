@@ -35,5 +35,5 @@
     - sudo dpkg -i debs/*.deb
 
 - link:
-    ~/.oh-my-zsh/custom/themes/powerlevel9k: powerlevel9k
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: powerlevel10k
     ~/.oh-my-zsh/custom/plugins/zsh-nvm: zsh-nvm
